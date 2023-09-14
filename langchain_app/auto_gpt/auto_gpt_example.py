@@ -17,7 +17,7 @@ from langchain.experimental import AutoGPT
 
 from langchain_app.models.text_generation_web_ui import build_text_generation_web_ui_client_llm
 
-search = SerpAPIWrapper()
+search = SerpAPIWrapper(serpapi_api_key='a05508a588fbb0c0c6cd83a71634deee17ebe5b846ae84a471d7b4aa900fcf9f')
 tools = [
     Tool(
         name = "search",
